@@ -1,0 +1,6 @@
+framework module LotusPaySDK {
+  umbrella header "LotusPaySDK.h"
+
+  export *
+  module * { export * }
+}

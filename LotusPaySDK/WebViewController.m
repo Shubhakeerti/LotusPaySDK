@@ -55,7 +55,7 @@
 
 - (void)setBackButton {
     UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
-    UIImage *buttonImage = [UIImage imageNamed:@"close"];
+    UIImage *buttonImage = [UIImage imageNamed:@"close" inBundle:[[LPUtility sharedUtility] getFrameworkBundle] compatibleWithTraitCollection:nil];
     [button setImage:buttonImage forState:UIControlStateNormal];
     [button setContentHorizontalAlignment:UIControlContentHorizontalAlignmentLeft];
     button.frame = CGRectMake(0, 0, 50.0, 40.0);
@@ -88,21 +88,13 @@
 - (void)handleResponse:(NSDictionary *)responseDict {
     NSInteger code = [responseDict[@"code"] integerValue];
     NSString *message = responseDict[@"message"];
-    UIAlertController *alertController;
     BOOL success;
     if (code == 200) {
         success = true;
-        alertController = [UIAlertController alertControllerWithTitle:@"Success" message:message preferredStyle:UIAlertControllerStyleAlert];
-
     } else {
         success = false;
-        alertController = [UIAlertController alertControllerWithTitle:@"Error" message:message preferredStyle:UIAlertControllerStyleAlert];
     }
-    [alertController addAction:[UIAlertAction actionWithTitle:@"Ok" style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
-        [self backButtonTapped];
-        [LPUtility sharedUtility].completionBlock(success, message);
-    }]];
-    [self presentViewController:alertController animated:true completion:nil];
+    [LPUtility sharedUtility].completionBlock(success, message);
 }
 
 #pragma mark - WebView Delegates

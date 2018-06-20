@@ -16,7 +16,9 @@ typedef void (^ CompletionBlock)(BOOL, NSString *);
 @property (nonatomic, copy) CompletionBlock completionBlock;
 @property (nonatomic, weak) UIViewController *clientPresentingViewController;
 @property (nonatomic, strong) NSString *paymentURL;
+@property (nonatomic, weak) UIViewController *webViewController;
 
 + (nonnull LPUtility *)sharedUtility;
+- (NSBundle *)getFrameworkBundle;
 - (void)presentViewController;
 @end

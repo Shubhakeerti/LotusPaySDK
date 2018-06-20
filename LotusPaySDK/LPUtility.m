@@ -20,9 +20,6 @@ static LPUtility *sharedUtility = nil;
     return sharedUtility;
 }
 
-- (UIColor*)getThemeColor {
-    return [UIColor colorWithRed:18.0/255.0 green:72.0/255.0 blue:113.0/255.0 alpha:1.0];
-}
 - (NSBundle *)getFrameworkBundle {
     return [NSBundle bundleForClass:[LPUtility class]];
 }
@@ -35,8 +32,7 @@ static LPUtility *sharedUtility = nil;
     WebViewController *webViewController = [[self getStoryBoardInstance] instantiateViewControllerWithIdentifier:@"WebViewController"];
     webViewController.requestUrl = self.paymentURL;
     UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:webViewController];
-    navigationController.navigationBar.tintColor = [self getThemeColor];
-    navigationController.navigationBar.titleTextAttributes = @{NSForegroundColorAttributeName: [self getThemeColor]};
+    [self setWebViewController: navigationController];
     [self.clientPresentingViewController presentViewController:navigationController animated:true completion:nil];
 }
 @end

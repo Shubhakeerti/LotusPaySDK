@@ -19,4 +19,8 @@
     [[LPUtility sharedUtility] presentViewController];
 }
 
++ (void)dismissSDK:(BOOL)animated {
+    [[LPUtility sharedUtility].webViewController dismissViewControllerAnimated:animated completion:nil];
+}
+
 @end

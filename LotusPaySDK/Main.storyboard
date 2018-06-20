@@ -4,7 +4,7 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <deployment version="2304" identifier="iOS"/>
+        <deployment version="2352" identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -40,15 +40,15 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="mbb-kT-MZ5" firstAttribute="top" secondItem="q7Y-WG-Uba" secondAttribute="top" id="07D-0n-KXa"/>
-                            <constraint firstItem="mbb-kT-MZ5" firstAttribute="trailing" secondItem="bkr-Ns-SNQ" secondAttribute="trailing" id="64b-0O-8hy"/>
-                            <constraint firstItem="fsk-vI-fwZ" firstAttribute="bottom" secondItem="bkr-Ns-SNQ" secondAttribute="bottom" id="7Ns-UO-EGc"/>
-                            <constraint firstItem="mbb-kT-MZ5" firstAttribute="leading" secondItem="bkr-Ns-SNQ" secondAttribute="leading" id="Hi2-Bz-Vb2"/>
+                            <constraint firstItem="mbb-kT-MZ5" firstAttribute="trailing" secondItem="lbw-t2-yrb" secondAttribute="trailing" id="64b-0O-8hy"/>
+                            <constraint firstItem="fsk-vI-fwZ" firstAttribute="bottom" secondItem="lbw-t2-yrb" secondAttribute="bottom" id="7Ns-UO-EGc"/>
+                            <constraint firstItem="mbb-kT-MZ5" firstAttribute="leading" secondItem="lbw-t2-yrb" secondAttribute="leading" id="Hi2-Bz-Vb2"/>
                             <constraint firstItem="fsk-vI-fwZ" firstAttribute="top" secondItem="q7Y-WG-Uba" secondAttribute="top" id="V6Q-9I-G2d"/>
-                            <constraint firstItem="mbb-kT-MZ5" firstAttribute="bottom" secondItem="bkr-Ns-SNQ" secondAttribute="bottom" id="X1L-Jb-oGQ"/>
-                            <constraint firstItem="fsk-vI-fwZ" firstAttribute="leading" secondItem="bkr-Ns-SNQ" secondAttribute="leading" id="ZyG-HH-6im"/>
-                            <constraint firstItem="fsk-vI-fwZ" firstAttribute="trailing" secondItem="bkr-Ns-SNQ" secondAttribute="trailing" id="dIA-E2-iae"/>
+                            <constraint firstItem="mbb-kT-MZ5" firstAttribute="bottom" secondItem="lbw-t2-yrb" secondAttribute="bottom" id="X1L-Jb-oGQ"/>
+                            <constraint firstItem="fsk-vI-fwZ" firstAttribute="leading" secondItem="lbw-t2-yrb" secondAttribute="leading" id="ZyG-HH-6im"/>
+                            <constraint firstItem="fsk-vI-fwZ" firstAttribute="trailing" secondItem="lbw-t2-yrb" secondAttribute="trailing" id="dIA-E2-iae"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="bkr-Ns-SNQ"/>
+                        <viewLayoutGuide key="safeArea" id="lbw-t2-yrb"/>
                     </view>
                     <connections>
                         <outlet property="loadingIndicator" destination="nJS-DB-Pmi" id="3JZ-CN-tEQ"/>

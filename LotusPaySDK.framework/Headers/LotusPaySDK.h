@@ -21,4 +21,5 @@ FOUNDATION_EXPORT const unsigned char LotusPaySDKVersionString[];
 
 + (void)initializeWithPaymentURL:(NSString *)urlString onController:(UIViewController *)controller completionBlock:(void (^) (BOOL, NSString*))completionBlock;
 
++ (void)dismissSDK:(BOOL)animated;
 @end
